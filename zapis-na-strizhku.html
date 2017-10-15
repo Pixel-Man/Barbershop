@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Барбершоп «Бородинский»</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+    <div class="page-header__logo">
+      <img src="http://placehold.it/370x153" width="370" height="153" alt="Барбершоп «Бородинский»">
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="nashi-raboty.html">Наши работы</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Записаться</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item"><a class="main-nav__user-login" href="" title="Войти">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="form__title">Запись на стрижку</h2>
+    <a class="btn  btn--step-back" href="index.html">На главную</a>
+    <form class="form" action="form.html" method="post">
+      <div class="form__group">
+        <label class="form__sign--hidden" for="surname">Фамилия</label>
+        <input class="form__field" type="text" name="surname" id="surname" placeholder="Фамилия" required autofocus>
+        <label class="form__sign--hidden" for="name">Имя</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Имя" required>
+        <label class="form__sign--hidden" for="patronymic">Отчество</label>
+        <input class="form__field" type="text" name="patronymic" id="patronymic">
+      </div>
+      <div class="form__group">
+        <label class="form__sign--hidden" for="phone">Контактный телефон</label>
+        <input class="form__field" type="tel" name="phone" id="phone" placeholder="Контактный телефон" pattern="(\+?\d[- .]*){7,13}" required>
+        <label class="form__sign--hidden" for="email">Контактный e-mail</label>
+        <input class="form__field" type="email" name="email" id="email" placeholder="Контактный e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+      </div>
+      <div class="form__group">
+        <label class="form__sign--hidden" for="comment">Доп. информация для мастера</label>
+        <textarea class="form__comment" name="comment" id="comment" placeholder="Доп. информация для мастера"></textarea>
+      </div>
+      <div class="from__group">
+        <b class="form__title-group">Выберите модель бороды:</b>
+        <input class="form__radio" type="radio" name="beard" id="beard-1" value="адмирал" checked>
+        <label class="form__sign--radio" for="beard-1">адмирал</label>
+        <input class="form__radio" type="radio" name="beard" id="beard-2" value="лесоруб">
+        <label class="form__sign--radio" for="beard-2">лесоруб</label>
+        <input class="form__radio" type="radio" name="beard" id="beard-3" value="полярник">
+        <label class="form__sign--radio" for="beard-3">полярник</label>
+        <input class="form__radio" type="radio" name="beard" id="beard-4" value="боярин">
+        <label class="form__sign--radio" for="beard-4">боярин</label>
+        <input class="form__radio" type="radio" name="beard" id="beard-5" value="мудрец">
+        <label class="form__sign--radio" for="beard-5">мудрец</label>
+      </div>
+      <div class="form__group">
+        <b class="form__title-group">Дополнительные услуги:</b>
+        <input class="form__checkbox" type="checkbox" name="service-1" id="service-1" value="Подкрасить бороду" checked>
+        <label class="form__sing--checkbox" for="service-1">Подкрасить бороду</label>
+        <input class="form__checkbox" type="checkbox" name="service-2" id="service-2" value="Накрутить усы" checked>
+        <label class="form__sing--checkbox" for="service-2">Накрутить усы</label>
+        <input class="form__checkbox" type="checkbox" name="service-3" id="service-3" value="Причесать бороду">
+        <label class="form__sing--checkbox" for="service-3">Причесать бороду</label>
+        <input class="form__checkbox" type="checkbox" name="service-4" id="service-4" value="Подровнять виски">
+        <label class="form__sing--checkbox" for="service-4">Подровнять виски</label>
+        <input class="form__checkbox" type="checkbox" name="service-5" id="service-5" value="Убрать седину">
+        <label class="form__sing--checkbox" for="service-5">Убрать седину</label>
+        <input class="form__checkbox" type="checkbox" name="service-6" id="service-6" value="Отполировать лысину">
+        <label class="form__sing--checkbox" for="service-6">Отполировать лысину</label>
+      </div>
+      <div class="form__group">
+        <input class="btn  form__submit" type="submit" value="Отправить заявку">
+      </div>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__contacts">
+        <b>Барбершоп «Бородинский»</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+      </p>
+      <p class="page-footer__social">
+        <span class="social-links">
+        <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Код напечатал:
+        <a class="btn  page-footer__copyright-link" href="#">PixelMan</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==== Modal Windows ==== -->
+
+  <div class="popup-entry  popup-entry--open  popup-entry--closed">
+    <h2 class="popup-entry__title">Личный кабинет</h2>
+    <p>Введите свой логин и пароль, чтобы войти</p>
+    <form class="popup-entry__form  form-entry" action="#" method="post">
+      <label class="form-entry__sign--hidden" for="login">Логин</label>
+      <input class="form-entry__field" type="text" name="login" id="login" placeholder="Логин" autofocus required>
+      <label class="form-entry__sign--hidden" for="password">Пароль</label>
+      <input class="form-entry__field" type="password" name="password" id="password" placeholder="Пароль" required>
+      <input class="form-entry__checkbox" type="checkbox" name="remember-me" id="remember-me">
+      <label class="form-entry__sign" for="remember-me">Запомните меня</label>
+      <a class="form-entry__recall" href="#">Я забыл пароль!</a>
+      <button class="btn  form-entry__btn" type="submit">Войти в личный кабинет</button>
+    </form>
+  </div>
+
+  <div class="popup-success  popup-success--open  popup-success--closed">
+    <h3 class="popup-seccess__title">Это успеч!</h3>
+    <p>Ваша заявка отправлена.<br>
+      Ожидайте, мы свяжемся с вами как только будет минутка.
+    </p>
+    <button class="btn  popup-success__closed" type="button">Закрыть окно</button>
+  </div>
+
+  <div class="popup-fail  popup-fail--open  popup-fail--closed">
+    <h3 class="popup-seccess__title">Неудача</h3>
+    <p>Что-то пошло не так.<br>
+      Проверьте выделенные красным поля формы.
+    </p>
+    <button class="btn  popup-success__closed" type="button">Ок</button>
+  </div>
+
+  <!-- ==== //Modal Windows ==== -->
+
+</body>
+
+</html>
