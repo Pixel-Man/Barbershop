@@ -13,4 +13,4 @@
 * Автоматизация: _Grunt_.
 
 
-![alt text](./img/barbershop_adaptive-new.png)
+![](./img/barbershop__readme.png)
