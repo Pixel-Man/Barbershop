@@ -29,5 +29,8 @@
   "scripts": {
     "build": "grunt build",
     "start": "npm run build && grunt serve"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }

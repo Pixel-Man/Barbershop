@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: [
-            'css/normalize.css',
+            'css/**',
             'fonts/**/*.{woff,woff2,eot,ttf,svg}',
             'img/**',
             'js/**',
@@ -28,6 +28,13 @@ module.exports = function(grunt) {
           dest: 'build'
         }]
       },
+      css: {
+        files: [{
+          expand: true,
+          src: ['css/style.css'],
+          dest: 'build'
+        }]
+      },
       js: {
         files: [{
           expand: true,
@@ -39,7 +46,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          'build/css/style.css': 'less/style.less'
+          'css/style.css': 'less/style.less'
         }
       }
     },
@@ -61,7 +68,7 @@ module.exports = function(grunt) {
             })
           ]
         },
-        src: 'build/css/*.css'
+        src: 'build/css/style.css'
       }
     },
     csso: {
@@ -70,7 +77,8 @@ module.exports = function(grunt) {
           report: 'gzip'
         },
         files: {
-          'build/css/style.min.css': ['build/css/style.css']
+          'build/css/style.min.css': ['build/css/style.css'],
+          'build/css/Normalize.min.css': ['build/css/Normalize.css']
         }
       }
     },
@@ -138,7 +146,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: ['less/**/*.less'],
-        tasks: ['less', 'postcss', 'csso']
+        tasks: ['less', 'copy:css', 'postcss', 'csso']
       },
       scripts: {
         files: ['js/*.js'],
