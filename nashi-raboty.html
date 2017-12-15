@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/Normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Барбершоп «Бородинский»</title>
 </head>
@@ -17,10 +17,10 @@
   <header class="page-header">
     <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
     <div class="page-header__logo">
-      <img src="/img/icons/logotype-mobile.svg" width="230" height="85" alt="Барбершоп «Бородинский»">
-      <!-- <svg width="370" height="153">
+      <!-- <img src="/img/icons/logotype-mobile.svg" width="230" height="85" alt="Барбершоп «Бородинский»"> -->
+      <svg width="230" height="80">
         <use xlink:href="#logotype-mobile"></use>
-      </svg> -->
+      </svg>
     </div>
     <nav class="main-nav  main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -39,87 +39,105 @@
   </header>
 
   <main>
-    <h2 class="works__title">Наши работы</h2>
-    <a class="btn  btn--step-back" href="index.html">На главную</a>
-    <div class="works__item  work">
-      <img src="http://placehold.it/100x100" width="100" height="100" alt="">
-      <span class="work__coolwork">Работа месяца</span>
-      <blockquote class="work__client">
-        <cite>Лжепётр Мчиславский</cite>
-        <p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-      </blockquote>
-      <div class="work__services">
-        <span class="work__service">Стрижка</span>
-        <span class="work__service">Бритье</span>
-        <span class="work__service">Усы</span>
+    <section class="works-list">
+      <h2 class="works-list__title">Наши работы</h2>
+      <a class="btn  works-list__btn--step-back" href="index.html">На главную</a>
+      <div class="works-list__item">
+        <div class="works-list__item-photo">
+          <picture>
+            <img src="http://placehold.it/100x100" width="100" height="100" alt="">
+          </picture>
+          <span class="works-list__item-coolwork">Работа месяца</span>
+        </div>
+        <blockquote class="works-list__item-client">
+          <cite>Лжепётр Мчиславский</cite>
+          <p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+        </blockquote>
+        <div class="works-list__item-services">
+          <span class="works-list__item-service">Стрижка</span>
+          <span class="works-list__item-service">Бритье</span>
+          <span class="works-list__item-service">Усы</span>
+        </div>
       </div>
-    </div>
-    <div class="works__item  work">
-      <img src="http://placehold.it/100x100" width="100" height="100" alt="">
-      <blockquote class="work__client">
-        <cite>Саша Мальцев</cite>
-        <p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-      </blockquote>
-      <div class="work__services">
-        <span class="work__service">Стрижка</span>
+      <div class="works-list__item">
+        <div class="works-list__item-photo">
+          <picture>
+            <img src="http://placehold.it/100x100" width="100" height="100" alt="">
+          </picture>
+        </div>
+        <blockquote class="works-list__item-client">
+          <cite>Саша Мальцев</cite>
+          <p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+        </blockquote>
+        <div class="works-list__item-services">
+          <span class="works-list__item-service">Стрижка</span>
+        </div>
       </div>
-    </div>
-    <div class="works__item  work">
-      <img src="http://placehold.it/100x100" width="100" height="100" alt="">
-      <blockquote class="work__client">
-        <cite>Владимир Иваныч</cite>
-        <p>К зимнему сезону — готов!</p>
-      </blockquote>
-      <div class="work__services">
-        <span class="work__service">Борода</span>
-        <span class="work__service">Усы</span>
+      <div class="works-list__item">
+        <div class="works-list__item-photo">
+          <picture>
+            <img src="http://placehold.it/100x100" width="100" height="100" alt="">
+          </picture>
+        </div>
+        <blockquote class="works-list__item-client">
+          <cite>Владимир Иваныч</cite>
+          <p>К зимнему сезону — готов!</p>
+        </blockquote>
+        <div class="works-list__item-services">
+          <span class="works-list__item-service">Борода</span>
+          <span class="works-list__item-service">Усы</span>
+        </div>
       </div>
-    </div>
-    <div class="works__item  work">
-      <img src="http://placehold.it/100x100" width="100" height="100" alt="">
-      <blockquote class="work__client">
-        <cite>Винстон Синий</cite>
-        <p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
-      </blockquote>
-      <div class="work__services">
-        <span class="work__service">Стрижка</span>
+      <div class="works-list__item">
+        <div class="works-list__item-photo">
+          <picture>
+            <img src="http://placehold.it/100x100" width="100" height="100" alt="">
+          </picture>
+        </div>
+        <blockquote class="works-list__item-client">
+          <cite>Винстон Синий</cite>
+          <p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+        </blockquote>
+        <div class="works-list__item-services">
+          <span class="works-list__item-service">Стрижка</span>
+        </div>
       </div>
-    </div>
-    <section class="works__price">
-      <h2 class="works__title">Прейскурант</h2>
-      <table class="works__table">
+    </section>
+    <section class="works-price">
+      <h2 class="works-price__title">Прейскурант</h2>
+      <table class="works-price__table">
         <tr>
-          <td class="works__price-col-1">1</td>
-          <td class="works__price-col-2">Классическая стрижка</td>
-          <td class="works__price-col-3">с мытьём головы</td>
-          <td class="works__price-col-4">1 500 руб.</td>
+          <td class="works-price__table-col-1">1</td>
+          <td class="works-price__table-col-2">Классическая стрижка</td>
+          <td class="works-price__table-col-3">с мытьём головы</td>
+          <td class="works-price__table-col-4">1 500 руб.</td>
         </tr>
         <tr>
-          <td class="works__price-col-1">2</td>
-          <td class="works__price-col-2">Современный вариант</td>
-          <td class="works__price-col-3">с мытьём головы</td>
-          <td class="works__price-col-4">1 500 руб.</td>
+          <td class="works-price__table-col-1">2</td>
+          <td class="works-price__table-col-2">Современный вариант</td>
+          <td class="works-price__table-col-3">с мытьём головы</td>
+          <td class="works-price__table-col-4">1 500 руб.</td>
         </tr>
         <tr>
-          <td class="works__price-col-1">3</td>
-          <td class="works__price-col-2">Индивидуальный подход</td>
-          <td class="works__price-col-3">с мытьём головы</td>
-          <td class="works__price-col-4">2 000 руб.</td>
+          <td class="works-price__table-col-1">3</td>
+          <td class="works-price__table-col-2">Индивидуальный подход</td>
+          <td class="works-price__table-col-3">с мытьём головы</td>
+          <td class="works-price__table-col-4">2 000 руб.</td>
         </tr>
         <tr>
-          <td class="works__price-col-1">4</td>
-          <td class="works__price-col-2">Бритьё бороды</td>
-          <td class="works__price-col-3">без мытья</td>
-          <td class="works__price-col-4">500 руб.</td>
+          <td class="works-price__table-col-1">4</td>
+          <td class="works-price__table-col-2">Бритьё бороды</td>
+          <td class="works-price__table-col-3">без мытья</td>
+          <td class="works-price__table-col-4">500 руб.</td>
         </tr>
         <tr>
-          <td class="works__price-col-1">5</td>
-          <td class="works__price-col-2">Бритьё головы</td>
-          <td class="works__price-col-3">с мытьём головы</td>
-          <td class="works__price-col-4">1 000 руб.</td>
+          <td class="works-price__table-col-1">5</td>
+          <td class="works-price__table-col-2">Бритьё головы</td>
+          <td class="works-price__table-col-3">с мытьём головы</td>
+          <td class="works-price__table-col-4">1 000 руб.</td>
         </tr>
       </table>
-      <p class="works__price-discount">
+      <p class="works-price__discount">
         С 10:00 до 14:00 скидка 20%
       </p>
     </section>
