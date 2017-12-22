@@ -1,0 +1,246 @@
+.works-list {
+  position: relative;
+  color: #000;
+  background-color: @bg-lightgrey;
+}
+
+.works-list__wrapper {
+  padding: 30px 20px 34px;
+  font-size: 18px;
+  line-height: 30px;
+
+  .container-fluid ();
+}
+
+.works-list__title {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.works-list__btn {
+  display: none;
+}
+
+.works-list__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #e5ddd5;
+}
+
+.works-list__item-photo {
+  position: relative;
+  width: 100%;
+  background-color: rgba(130, 101, 80, 0.1);
+
+  & img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+}
+
+.works-list__item-coolwork {
+  position: absolute;
+  bottom: 29px;
+  left: -2px;
+  z-index: 2;
+  padding: 12px 25px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #826550;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25px;
+    z-index: -1;
+    border: 27px solid #826550;
+    border-right-color: transparent;
+  }
+}
+
+.works-list__item-client {
+  margin: 0;
+  padding: 10px 20px;
+
+  & cite {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  & p {
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}
+
+.works-list__item-services {
+  margin-bottom: 20px;
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+.works-list__item-service {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+  padding-left: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.works-list__item-service--haircut::after {
+  width: 21px;
+  height: 20px;
+  background: url(/img/icons/scissors-icon.svg) no-repeat;
+}
+
+.works-list__item-service--shaving::after {
+  width: 23px;
+  height: 21px;
+  background: url(/img/icons/beard-icon.svg) no-repeat;
+}
+
+.works-list__item-service--mustache::after {
+  left: -12px;
+  width: 45px;
+  height: 12px;
+  background: url(/img/icons/mustache-icon.svg) no-repeat;
+}
+
+.works-list__item-service--beard::after {
+  width: 21px;
+  height: 20px;
+  background: url(/img/icons/beard-icon.svg) no-repeat;
+}
+
+.works-list__footer {
+  width: 100%;
+  height: 34px;
+  background-color: #353535;
+
+  & svg {
+    display: block;
+    height: 100%;
+    fill: @bg-lightgrey;
+  }
+}
+
+@media @tablet-widths {
+  .works-list__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .works-list__title {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+
+  .works-list__btn {
+    display: inline-block;
+    float: right;
+    width: 160px;
+  }
+
+  .works-list__item-photo {
+    width: auto;
+    height: auto;
+
+    & img {
+      margin: 0;
+    }
+  }
+
+  .works-list__item-coolwork {
+    bottom: 395px;
+  }
+
+  .works-list__client-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 45px 50px;
+  }
+
+  .works-list__item-client {
+    margin-bottom: auto;
+    padding: 0;
+  }
+
+  .works-list__item-services {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .works-list__footer {
+    height: 68px;
+  }
+}
+
+@media @desktop-widths {
+  .works-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .works-list__title {
+    margin: 0;
+    margin-bottom: 67px;
+  }
+
+  .works-list__btn {
+    align-self: flex-start;
+    float: none;
+    width: 160px;
+  }
+
+  .works-list__item {
+    width: 31%;
+  }
+
+  .works-list__item-photo {
+    width: 100%;
+
+    & img {
+      margin: 0 auto;
+    }
+  }
+
+  .works-list__item--hit {
+    width: 100%;
+
+    & .works-list__item-photo {
+      width: auto;
+      height: auto;
+
+      & img {
+        margin: 0;
+      }
+    }
+  }
+
+  .works-list__footer {
+    display: none;
+  }
+}
