@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/Normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Барбершоп «Бородинский»</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+    <div class="page-header__logo  page-header__logo--page-form">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/icons/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/icons/logotype-tablet.svg">
+        <img src="img/icons/logotype-mobile.svg" alt="Барбершоп «Бородинский»">
+      </picture>
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Наши работы</a></li>
+          <li class="main-nav__item"><a href="/zapis-na-strizhku.html">Записаться</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item"><a class="main-nav__user-login" href="" title="Войти">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__footer">
+      <svg version="1.1" width="100%" height="68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 300 150" preserveAspectRatio="none">
+        <polygon points="0,150 0,0 150,150" />
+        <polygon points="150,150 300,0 300,300" />
+      </svg>
+    </div>
+  </header>
+
+  <!-- ==== Modal Windows ==== -->
+
+  <div class="popup-entry  popup-entry--closed">
+    <div class="popup-entry__wrapper">
+      <h2 class="popup-entry__title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль, чтобы войти</p>
+      <form class="popup-entry__form" action="#" method="post">
+        <label class="popup-entry__form-sign" for="login">Логин</label>
+        <input class="popup-entry__form-field  popup-entry__form-field--login" type="text" name="login" id="login" placeholder="Логин" autofocus required>
+        <label class="popup-entry__form-sign" for="password">Пароль</label>
+        <input class="popup-entry__form-field  popup-entry__form-field--password" type="password" name="password" id="password" placeholder="Пароль" required>
+        <input class="popup-entry__form-checkbox" type="checkbox" name="remember-me" id="remember-me">
+        <div class="popup-entry__wrapper-sign">
+          <label class="popup-entry__form-sign  popup-entry__form-sign--remember-me" for="remember-me">Запомните меня</label>
+          <a class="popup-entry__form-recall" href="#">Я забыл пароль!</a>
+        </div>
+        <div class="popup-entry__wrapper-btn">
+          <button class="btn  popup-entry__form-btn  popup-entry__form-btn--entry" type="submit">Войти<i> в личный кабинет</i></button>
+          <button class="btn  popup-entry__form-btn  popup-entry__form-btn--closed" type="button">Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==== //Modal Windows ==== -->
+
+  <main>
+    <section class="works-list">
+      <div class="works-list__wrapper">
+        <h2 class="works-list__title">Наши работы</h2>
+        <a class="btn  works-list__btn" href="index.html">На главную</a>
+        <div class="works-list__item  works-list__item--hit">
+          <div class="works-list__item-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@3x.jpg 3x, img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@1,5x.jpg 1.5x, img/photo-1-desktop.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@3x.jpg 3x, img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@1,5x.jpg 1.5x, img/photo-1-tablet.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/photo-1-mobile@3x.jpg 3x, img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@1,5x.jpg 1.5x, img/photo-1-mobile.jpg 1x">
+              <img src="img/photo-1-mobile.jpg">
+            </picture>
+            <span class="works-list__item-coolwork">Работа месяца</span>
+          </div>
+          <div class="works-list__client-wrapper">
+            <blockquote class="works-list__item-client">
+              <cite>Лжепётр Мчиславский</cite>
+              <p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+            </blockquote>
+            <div class="works-list__item-services">
+              <span class="works-list__item-service  works-list__item-service--haircut">Стрижка</span>
+              <span class="works-list__item-service  works-list__item-service--shaving">Бритье</span>
+              <span class="works-list__item-service  works-list__item-service--mustache">Усы</span>
+            </div>
+          </div>
+        </div>
+        <div class="works-list__item">
+          <div class="works-list__item-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@3x.jpg 3x, img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@1,5x.jpg 1.5x, img/photo-2-desktop.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@3x.jpg 3x, img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@1,5x.jpg 1.5x, img/photo-2-tablet.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/photo-2-mobile@3x.jpg 3x, img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@1,5x.jpg 1.5x, img/photo-2-mobile.jpg 1x">
+              <img src="img/photo-2-mobile.jpg">
+            </picture>
+          </div>
+          <div class="works-list__client-wrapper">
+            <blockquote class="works-list__item-client">
+              <cite>Саша Мальцев</cite>
+              <p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+            </blockquote>
+            <div class="works-list__item-services">
+              <span class="works-list__item-service  works-list__item-service--haircut">Стрижка</span>
+            </div>
+          </div>
+        </div>
+        <div class="works-list__item">
+          <div class="works-list__item-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@3x.jpg 3x, img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@1,5x.jpg 1.5x, img/photo-3-desktop.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@3x.jpg 3x, img/photo-3-tablet@2x.jpg 2x, img/photo-3-tablet@1,5x.jpg 1.5x, img/photo-3-tablet.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/photo-3-mobile@3x.jpg 3x, img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@1,5x.jpg 1.5x, img/photo-3-mobile.jpg 1x">
+              <img src="img/photo-3-mobile.jpg">
+            </picture>
+          </div>
+          <div class="works-list__client-wrapper">
+            <blockquote class="works-list__item-client">
+              <cite>Владимир Иваныч</cite>
+              <p>К зимнему сезону — готов!</p>
+            </blockquote>
+            <div class="works-list__item-services">
+              <span class="works-list__item-service  works-list__item-service--beard">Борода</span>
+              <span class="works-list__item-service  works-list__item-service--mustache">Усы</span>
+            </div>
+          </div>
+        </div>
+        <div class="works-list__item">
+          <div class="works-list__item-photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@3x.jpg 3x, img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@1,5x.jpg 1.5x, img/photo-4-desktop.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@3x.jpg 3x, img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@1,5x.jpg 1.5x, img/photo-4-tablet.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/photo-4-mobile@3x.jpg 3x, img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@1,5x.jpg 1.5x, img/photo-4-mobile.jpg 1x">
+              <img src="img/photo-4-mobile.jpg">
+            </picture>
+          </div>
+          <div class="works-list__client-wrapper">
+            <blockquote class="works-list__item-client">
+              <cite>Винстон Синий</cite>
+              <p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+            </blockquote>
+            <div class="works-list__item-services">
+              <span class="works-list__item-service  works-list__item-service--haircut">Стрижка</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="works-list__footer">
+        <svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,0 100,0 50,100"/>
+        </svg>
+      </div>
+    </section>
+    <section class="works-price">
+      <div class="works-price__wrapper">
+        <h2 class="works-price__title">Прейскурант</h2>
+        <table class="works-price__table">
+          <tr>
+            <td class="works-price__table-col-1">1</td>
+            <td class="works-price__table-col-2">Классическая стрижка</td>
+            <td class="works-price__table-col-3">с мытьём головы</td>
+            <td class="works-price__table-col-4">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="works-price__table-col-1">2</td>
+            <td class="works-price__table-col-2">Современный вариант</td>
+            <td class="works-price__table-col-3">с мытьём головы</td>
+            <td class="works-price__table-col-4">1 500 руб.</td>
+          </tr>
+          <tr>
+            <td class="works-price__table-col-1">3</td>
+            <td class="works-price__table-col-2">Индивидуальный подход</td>
+            <td class="works-price__table-col-3">с мытьём головы</td>
+            <td class="works-price__table-col-4">2 000 руб.</td>
+          </tr>
+          <tr>
+            <td class="works-price__table-col-1">4</td>
+            <td class="works-price__table-col-2">Бритьё бороды</td>
+            <td class="works-price__table-col-3">без мытья</td>
+            <td class="works-price__table-col-4">500 руб.</td>
+          </tr>
+          <tr>
+            <td class="works-price__table-col-1">5</td>
+            <td class="works-price__table-col-2">Бритьё головы</td>
+            <td class="works-price__table-col-3">с мытьём головы</td>
+            <td class="works-price__table-col-4">1 000 руб.</td>
+          </tr>
+        </table>
+        <p class="works-price__discount">
+          С 10:00 до 14:00 скидка 20%
+        </p>
+      </div>
+      <div class="works-price__footer">
+        <svg version="1.1" width="100%" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,0 100,0 50,100"/>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__contacts">
+        <b>Барбершоп «Бородинский»</b><br> г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+      </p>
+      <p class="page-footer__social">
+        <span class="page-footer__social-links">
+        <a class="page-footer__social-link  page-footer__social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="page-footer__social-link  page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="page-footer__social-link  page-footer__social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="#">HTML ACADEMY</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/js/script.min.js" charset="utf-8"></script>
+
+</html>
