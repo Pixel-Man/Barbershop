@@ -2,7 +2,7 @@
 
 * Вёрстка: [Виталий Дубинка (Pixel-Man)](https://github.com/Pixel-Man).
 * Макет: [HTML Academy](https://htmlacademy.ru).
-* С реализованным проектом можно ознакомится по [ссылке](https://pixel-man.github.io/Barbershop/).
+* С реализованным проектом можно ознакомится по [ссылке](https://pixel-man.github.io/Barbershop_production/).
 
 ## Описание
 Проект «Barbershop» был выполнен в рамках пройденного онлайн‑курса «Продвинутого HTML и CSS» от HTML Academy.
