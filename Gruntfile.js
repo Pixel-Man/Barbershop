@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         },
         files: {
           'build/css/style.min.css': ['build/css/style.css'],
-          'build/css/Normalize.min.css': ['build/css/Normalize.css']
+          'build/css/normalize.min.css': ['build/css/normalize.css']
         }
       }
     },

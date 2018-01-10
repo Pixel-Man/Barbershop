@@ -111,12 +111,12 @@ table {
     width: 100%;
     height: 400px;
     background-color: #000;
-    background: url("/img/bg-tablet.jpg") no-repeat center 0;
+    background: url("../img/bg-tablet.jpg") no-repeat center 0;
     background-size: cover;
   }
   .page-header__logo--page-form {
     height: 213px;
-    background: url("/img/bg-inner.jpg") no-repeat center 0;
+    background: url("../img/bg-inner.jpg") no-repeat center 0;
     background-size: cover;
   }
   .page-header__logo img {
@@ -144,37 +144,37 @@ table {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .page-header__logo {
-    background: url(/img/bg-tablet@2x.jpg) no-repeat center 0;
+    background: url(../img/bg-tablet@2x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
   .page-header__logo {
-    background: url(/img/bg-tablet@2x.jpg) no-repeat center 0;
+    background: url(../img/bg-tablet@2x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (min-resolution: 288dpi) {
   .page-header__logo {
-    background: url(/img/bg-tablet@3x.jpg) no-repeat center 0;
+    background: url(../img/bg-tablet@3x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .page-header__logo--page-form {
-    background: url(/img/bg-inner@2x.jpg) no-repeat center 0;
+    background: url(../img/bg-inner@2x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
   .page-header__logo--page-form {
-    background: url(/img/bg-inner@2x.jpg) no-repeat center 0;
+    background: url(../img/bg-inner@2x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (min-resolution: 288dpi) {
   .page-header__logo--page-form {
-    background: url(/img/bg-inner@3x.jpg) no-repeat center 0;
+    background: url(../img/bg-inner@3x.jpg) no-repeat center 0;
     background-size: cover;
   }
 }
@@ -302,7 +302,7 @@ table {
   left: 21px;
   width: 16px;
   height: 16px;
-  background-image: url(/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -10px -204px;
   opacity: 0.3;
 }
@@ -729,15 +729,15 @@ table {
   text-align: center;
 }
 .advantages__item--fast {
-  background: url(/img/icons/advantage-1-illustration.svg) no-repeat center 0;
+  background: url(../img/icons/advantage-1-illustration.svg) no-repeat center 0;
   background-size: 95px 94px;
 }
 .advantages__item--cool {
-  background: url(/img/icons/advantage-2-illustration.svg) no-repeat center 0;
+  background: url(../img/icons/advantage-2-illustration.svg) no-repeat center 0;
   background-size: 95px 88px;
 }
 .advantages__item--dearly {
-  background: url(/img/icons/advantage-3-illustration.svg) no-repeat center 0;
+  background: url(../img/icons/advantage-3-illustration.svg) no-repeat center 0;
   background-size: 95px 91px;
 }
 .advantages__item:nth-child(n+2) {
@@ -1351,7 +1351,7 @@ table {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: url(/img/sprite.png) no-repeat 0;
+  background: url(../img/sprite.png) no-repeat 0;
   transform: translate(-50%, -50%);
 }
 .page-footer__social-link:hover {
@@ -1593,23 +1593,23 @@ table {
 .works-list__item-service--haircut::after {
   width: 21px;
   height: 20px;
-  background: url(/img/icons/scissors-icon.svg) no-repeat;
+  background: url(../img/icons/scissors-icon.svg) no-repeat;
 }
 .works-list__item-service--shaving::after {
   width: 23px;
   height: 21px;
-  background: url(/img/icons/beard-icon.svg) no-repeat;
+  background: url(../img/icons/beard-icon.svg) no-repeat;
 }
 .works-list__item-service--mustache::after {
   left: -12px;
   width: 45px;
   height: 12px;
-  background: url(/img/icons/mustache-icon.svg) no-repeat;
+  background: url(../img/icons/mustache-icon.svg) no-repeat;
 }
 .works-list__item-service--beard::after {
   width: 21px;
   height: 20px;
-  background: url(/img/icons/beard-icon.svg) no-repeat;
+  background: url(../img/icons/beard-icon.svg) no-repeat;
 }
 .works-list__footer {
   width: 100%;
@@ -1772,7 +1772,7 @@ table {
   left: 20px;
   width: 57px;
   height: 57px;
-  background: url(/img/icons/clock-illustration.svg);
+  background: url(../img/icons/clock-illustration.svg);
   transform: translateY(-50%);
 }
 .works-price__footer {
@@ -2008,23 +2008,23 @@ table {
   transform: translateX(-50%);
 }
 .page-form__form-sign--1 {
-  background: url(/img/icons/beard-1.svg) center 100px no-repeat;
+  background: url(../img/icons/beard-1.svg) center 100px no-repeat;
   background-size: 52px 49px;
 }
 .page-form__form-sign--2 {
-  background: url(/img/icons/beard-2.svg) center 100px no-repeat;
+  background: url(../img/icons/beard-2.svg) center 100px no-repeat;
   background-size: 58px 68px;
 }
 .page-form__form-sign--3 {
-  background: url(/img/icons/beard-3.svg) center 100px no-repeat;
+  background: url(../img/icons/beard-3.svg) center 100px no-repeat;
   background-size: 64px 78px;
 }
 .page-form__form-sign--4 {
-  background: url(/img/icons/beard-4.svg) center 100px no-repeat;
+  background: url(../img/icons/beard-4.svg) center 100px no-repeat;
   background-size: 58px 98px;
 }
 .page-form__form-sign--5 {
-  background: url(/img/icons/beard-5.svg) center 100px no-repeat;
+  background: url(../img/icons/beard-5.svg) center 100px no-repeat;
   background-size: 46px 105px;
 }
 .page-form__form-group--service {
@@ -2068,7 +2068,7 @@ table {
   left: 6px;
   width: 22px;
   height: 16px;
-  background: url(/img/icons/tick.svg);
+  background: url(../img/icons/tick.svg);
 }
 .page-form__form-submit {
   width: 100%;
@@ -2231,7 +2231,7 @@ table {
   left: 6px;
   width: 22px;
   height: 16px;
-  background: url(/img/icons/tick.svg);
+  background: url(../img/icons/tick.svg);
 }
 .popup-entry__form-recall {
   margin-top: 33px;
